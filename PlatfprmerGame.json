@@ -270,6 +270,46 @@
         "name": "GDevelop beginner platformer assets\\slime_green_walk4.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "GDevelop beginner platformer assets/Knight-Death1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GDevelop beginner platformer assets\\Knight-Death1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "GDevelop beginner platformer assets/Knight-Death2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GDevelop beginner platformer assets\\Knight-Death2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "GDevelop beginner platformer assets/Knight-Death3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GDevelop beginner platformer assets\\Knight-Death3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "GDevelop beginner platformer assets/Knight-Death4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GDevelop beginner platformer assets\\Knight-Death4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Boundary.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Boundary",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -301,7 +341,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 2.5991525916796507,
+        "zoomFactor": 1.2530387740589848,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -316,8 +356,8 @@
           "name": "Player",
           "persistentUuid": "fb0da1f0-9a45-4bda-a326-471672607543",
           "width": 0,
-          "x": 832,
-          "y": 144,
+          "x": 512,
+          "y": 176,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1029,8 +1069,25 @@
           "persistentUuid": "12ab49da-ad6f-4f84-bd75-efd9a8cf456c",
           "width": 0,
           "x": 920,
-          "y": 136,
+          "y": 176,
           "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 16,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Boundary",
+          "persistentUuid": "53a51375-520a-4259-853a-ce9f5a0855ed",
+          "width": 656,
+          "x": 480,
+          "y": 272,
+          "zOrder": 39,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1047,6 +1104,8 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 400,
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
@@ -1059,9 +1118,7 @@
               "ladderClimbingSpeed": 150,
               "maxFallingSpeed": 400,
               "maxSpeed": 150,
-              "name": "PlatformerObject",
               "slopeMaxAngle": 60,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "useLegacyTrajectory": false,
               "xGrabTolerance": 10,
               "yGrabOffset": 0
@@ -1294,6 +1351,162 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "Dead",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "GDevelop beginner platformer assets\\Knight-Death1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 9
+                          },
+                          {
+                            "x": 22,
+                            "y": 9
+                          },
+                          {
+                            "x": 22,
+                            "y": 28
+                          },
+                          {
+                            "x": 9,
+                            "y": 28
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "GDevelop beginner platformer assets\\Knight-Death2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 9
+                          },
+                          {
+                            "x": 22,
+                            "y": 9
+                          },
+                          {
+                            "x": 22,
+                            "y": 28
+                          },
+                          {
+                            "x": 9,
+                            "y": 28
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "GDevelop beginner platformer assets\\Knight-Death3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 9
+                          },
+                          {
+                            "x": 22,
+                            "y": 9
+                          },
+                          {
+                            "x": 22,
+                            "y": 28
+                          },
+                          {
+                            "x": 9,
+                            "y": 28
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "GDevelop beginner platformer assets\\Knight-Death4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 9
+                          },
+                          {
+                            "x": 22,
+                            "y": 9
+                          },
+                          {
+                            "x": 22,
+                            "y": 28
+                          },
+                          {
+                            "x": 9,
+                            "y": 28
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -1308,10 +1521,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ]
@@ -1327,10 +1540,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ]
@@ -1346,10 +1559,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ]
@@ -1365,10 +1578,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ]
@@ -1384,10 +1597,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "Jumpthru",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "Jumpthru",
               "yGrabOffset": 0
             }
           ]
@@ -1895,11 +2108,11 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "ignoreDefaultControls": true,
               "jumpSpeed": 170,
               "maxSpeed": 40,
-              "name": "PlatformerObject",
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 400,
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
@@ -1930,8 +2143,8 @@
                       "points": [
                         {
                           "name": "Checker",
-                          "x": 1,
-                          "y": 0.5
+                          "x": 23,
+                          "y": 16
                         }
                       ],
                       "originPoint": {
@@ -1972,8 +2185,8 @@
                       "points": [
                         {
                           "name": "Checker",
-                          "x": 1,
-                          "y": 0.5
+                          "x": 23,
+                          "y": 16
                         }
                       ],
                       "originPoint": {
@@ -2014,8 +2227,8 @@
                       "points": [
                         {
                           "name": "Checker",
-                          "x": 1,
-                          "y": 0.5
+                          "x": 23,
+                          "y": 16
                         }
                       ],
                       "originPoint": {
@@ -2056,8 +2269,8 @@
                       "points": [
                         {
                           "name": "Checker",
-                          "x": 1,
-                          "y": 0.5
+                          "x": 23,
+                          "y": 16
                         }
                       ],
                       "originPoint": {
@@ -2097,6 +2310,67 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Boundary",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Boundary",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Boundary",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -2104,6 +2378,9 @@
         "children": [
           {
             "objectName": "Player"
+          },
+          {
+            "objectName": "Boundary"
           },
           {
             "objectName": "Enemy"
@@ -2245,7 +2522,7 @@
                   "parameters": [
                     "Enemy",
                     "Flippable",
-                    "no"
+                    ""
                   ]
                 }
               ]
@@ -2303,6 +2580,131 @@
                     "yes"
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Enemy",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "Player",
+                    ">",
+                    "Boundary.Y()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Player",
+                "Animation",
+                "=",
+                "\"Dead\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Player",
+                "Animation",
+                "=",
+                "\"Dead\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Untitled scene\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ClampCamera"
+              },
+              "parameters": [
+                "",
+                "Player.X()-1000",
+                "Player.Y()-1000",
+                "Player.X()+1000",
+                "Boundary.Y()",
+                "",
+                ""
               ]
             }
           ]
