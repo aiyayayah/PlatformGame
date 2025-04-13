@@ -15,9 +15,9 @@ This is a 2D platformer game created using **GDevelop**.
 
 ## Screenshot
 
-![Gameplay Screenshot](assets/screenshot/1.png)
-![Gameplay Screenshot](assets/screenshot/2.png)
-![Gameplay Screenshot](assets/screenshot/3.png)
+![Gameplay Screenshot](screenshot/1.png)
+![Gameplay Screenshot](screenshot/2.png)
+![Gameplay Screenshot](screenshot/3.png)
 
 
 Have fun playing!
